@@ -24,3 +24,9 @@ Using the [Atom](https://atom.io) editor with
 
 # Finder & co.
 - [Spectacle app](https://www.spectacleapp.com/) for easily moving and resizing windows
+- [FileShuttle](http://fileshuttle.io/) for quickly uploading files/screenshots
+
+# Browser
+Using those extensions
+- [Ghostery](https://www.ghostery.com/try-us/download-browser-extension/)
+- [HTTPS Everywhere](https://www.eff.org/de/https-everywhere)
