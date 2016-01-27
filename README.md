@@ -21,6 +21,10 @@ Using the [Atom](https://atom.io) editor with
 - [Emmet](https://atom.io/packages/emmet)
 - [file-icons](https://atom.io/packages/file-icons)
 - [Markdown Preview Plus](https://atom.io/packages/markdown-preview-plus)
+- [DocBlockr](https://atom.io/packages/docblockr)
+- [Sort Lines](https://atom.io/packages/sort-lines)
+- [Synced-Sidebar](https://atom.io/packages/synced-sidebar)
+- [Copy Path](https://atom.io/packages/copy-path)
 
 # Finder & co.
 - [Spectacle app](https://www.spectacleapp.com/) for easily moving and resizing windows
@@ -31,3 +35,4 @@ Using the [Atom](https://atom.io) editor with
 Using those extensions
 - [Ghostery](https://www.ghostery.com/try-us/download-browser-extension/)
 - [HTTPS Everywhere](https://www.eff.org/de/https-everywhere)
+- [JSONView](http://jsonview.com/)
