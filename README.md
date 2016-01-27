@@ -13,7 +13,12 @@ It's [iTerm2](https://github.com/gnachman/iTerm2) (custom compiled) with
 Always used this tutorial for my MAMP stack:  
 [OS X 10.10 Yosemite Local Development Environment: Apache, PHP, and MySQL with Homebrew](https://echo.co/blog/os-x-1010-yosemite-local-development-environment-apache-php-and-mysql-homebrew)  
 
+Useful tools within this category:
+
+- [Sequel Pro](http://www.sequelpro.com/) (Can't wait for [Wagon](https://www.wagonhq.com/))
+
 # Coding
+
 Using the [Atom](https://atom.io) editor with
 - [Material UI](https://atom.io/themes/atom-material-ui)
 - [Material Syntax](https://atom.io/themes/atom-material-syntax)
