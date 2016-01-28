@@ -30,6 +30,7 @@ Using the [Atom](https://atom.io) editor with
 - [Sort Lines](https://atom.io/packages/sort-lines)
 - [Synced-Sidebar](https://atom.io/packages/synced-sidebar)
 - [Copy Path](https://atom.io/packages/copy-path)
+- [Todo Show](https://atom.io/packages/todo-show)
 
 # Finder & co.
 - [Spectacle app](https://www.spectacleapp.com/) for easily moving and resizing windows
