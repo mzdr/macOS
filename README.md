@@ -19,6 +19,8 @@ Useful tools within this category:
 
 # Coding
 
+![Screenshot of Atom](https://mzdr.github.io/osx/atom.png)  
+
 Using the [Atom](https://atom.io) editor with
 - [Material UI](https://atom.io/themes/atom-material-ui)
 - [Material Syntax](https://atom.io/themes/atom-material-syntax)
