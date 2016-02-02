@@ -44,3 +44,4 @@ Using those extensions
 - [Ghostery](https://www.ghostery.com/try-us/download-browser-extension/)
 - [HTTPS Everywhere](https://www.eff.org/de/https-everywhere)
 - [JSONView](http://jsonview.com/)
+- [EditThisCookie](http://www.editthiscookie.com/)
