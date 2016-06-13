@@ -37,7 +37,7 @@ Using the [Atom](https://atom.io) editor with
 # Finder & co.
 - [Spectacle app](https://www.spectacleapp.com/) for easily moving and resizing windows
 - [FileShuttle](http://fileshuttle.io/) for quickly uploading files/screenshots
-- [CopyClip](https://itunes.apple.com/us/app/copyclip-clipboard-history/id595191960) as a clipboard history manager
+- [1Clipboard](http://1clipboard.io/) as a clipboard history manager
 
 # Browser
 Using those extensions
