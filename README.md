@@ -9,13 +9,14 @@ It's [iTerm2](https://github.com/gnachman/iTerm2) (custom compiled) with
 - [Prezto](https://github.com/sorin-ionescu/prezto) with [garrett prompt](https://github.com/chauncey-garrett/zsh-prompt-garrett)
 - [Seti](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes) color scheme
 
-# PHP, MySQL, Apache
-Always used this tutorial for my MAMP stack:  
-[OS X 10.10 Yosemite Local Development Environment: Apache, PHP, and MySQL with Homebrew](https://echo.co/blog/os-x-1010-yosemite-local-development-environment-apache-php-and-mysql-homebrew)  
+# Development setup
 
-Useful tools within this category:
-
+- [Homebrew](http://brew.sh/)
+- [nginx](https://nginx.org/) (using `brew install nginx`, see [etc/nginx](etc/nginx))
+- [MySQL](https://www.mysql.com/) (using `brew install mysql`)
+- [PHP7](https://secure.php.net/) (using `brew install php70`, see [Homebrew/homebrew-php#installation](https://github.com/Homebrew/homebrew-php#installation))
 - [Sequel Pro](http://www.sequelpro.com/)
+- [dnsmasq](dnsmasq.md)
 
 # Coding
 
@@ -45,3 +46,6 @@ Using those extensions
 - [HTTPS Everywhere](https://www.eff.org/de/https-everywhere)
 - [JSONView](http://jsonview.com/)
 - [EditThisCookie](http://www.editthiscookie.com/)
+
+# Miscellaneous
+- [f.lux](https://justgetflux.com/)
