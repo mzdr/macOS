@@ -15,7 +15,7 @@ Always used this tutorial for my MAMP stack:
 
 Useful tools within this category:
 
-- [Sequel Pro](http://www.sequelpro.com/) (Can't wait for [Wagon](https://www.wagonhq.com/))
+- [Sequel Pro](http://www.sequelpro.com/)
 
 # Coding
 
