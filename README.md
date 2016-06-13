@@ -36,9 +36,9 @@ Using the [Atom](https://atom.io) editor with
 - [Todo Show](https://atom.io/packages/todo-show)
 
 # Finder & co.
-- [Spectacle app](https://www.spectacleapp.com/) for easily moving and resizing windows
-- [FileShuttle](http://fileshuttle.io/) for quickly uploading files/screenshots
-- [1Clipboard](http://1clipboard.io/) as a clipboard history manager
+- [Spectacle app](https://www.spectacleapp.com/)
+- [FileShuttle](http://fileshuttle.io/)
+- [1Clipboard](http://1clipboard.io/)
 
 # Browser
 Using those extensions
