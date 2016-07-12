@@ -34,6 +34,8 @@ Using the [Atom](https://atom.io) editor with
 - [Synced-Sidebar](https://atom.io/packages/synced-sidebar)
 - [Copy Path](https://atom.io/packages/copy-path)
 - [Todo Show](https://atom.io/packages/todo-show)
+- [Livestyle Anaylzer](https://atom.io/packages/livestyle-atom)
+- [Webbox Color](https://atom.io/packages/webbox-color) with `.color-box.on-line-end { vertical-align: sub; top: 0; }`
 
 # Finder & co.
 - [Spectacle app](https://www.spectacleapp.com/)
