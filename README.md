@@ -31,7 +31,6 @@ Using the [Atom](https://atom.io) editor with
 - [Markdown Preview Plus](https://atom.io/packages/markdown-preview-plus)
 - [DocBlockr](https://atom.io/packages/docblockr)
 - [Sort Lines](https://atom.io/packages/sort-lines)
-- [Synced-Sidebar](https://atom.io/packages/synced-sidebar)
 - [Copy Path](https://atom.io/packages/copy-path)
 - [Todo Show](https://atom.io/packages/todo-show)
 - [Livestyle Anaylzer](https://atom.io/packages/livestyle-atom)
