@@ -35,6 +35,8 @@ Using the [Atom](https://atom.io) editor with
 - [Todo Show](https://atom.io/packages/todo-show)
 - [Livestyle Anaylzer](https://atom.io/packages/livestyle-atom)
 - [Pigments](https://atom.io/packages/pigments)
+- [Highlight Selected](https://atom.io/packages/highlight-selected)
+- [HTML Head Snippets](https://atom.io/packages/html-head-snippets)
 
 # Finder & co.
 - [Spectacle app](https://www.spectacleapp.com/)
