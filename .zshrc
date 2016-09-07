@@ -53,7 +53,7 @@ setopt ZLE
 setopt NO_HUP
 
 # only fools wouldn't do this ;-)
-#export EDITOR="subl -n -w"
+export EDITOR="atom"
 
 #setopt IGNORE_EOF
 
@@ -94,3 +94,9 @@ bindkey -M vicmd "q" push-line
 
 # it's like, space AND completion.  Gnarlbot.
 bindkey -M viins ' ' magic-space
+
+# load avn
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh"
+
+# z is the new j, yo
+. `brew --prefix`/etc/profile.d/z.sh
