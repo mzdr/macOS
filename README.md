@@ -1,53 +1,131 @@
-# Terminal
-![Screenshot of set up iTerm2](https://mzdr.github.io/osx/iTerm2.png)  
+# Installation
 
-It's [iTerm2](https://github.com/gnachman/iTerm2) (custom compiled) with
+1. Clone this repository. (`git clone …`)
+2. Jump into the directory of the cloned repository. (`cd macOS`)
+3. Run `./install.sh`
 
-- [borderless-padding](https://github.com/jaredculp/iterm2-borderless-padding) patch
-- [FiraCode](https://github.com/tonsky/FiraCode) (14pt) as font
-- [Cousine for Powerline](https://github.com/powerline/fonts) (14pt) as non-ASCII font
-- [Prezto](https://github.com/sorin-ionescu/prezto) with [garrett prompt](https://github.com/chauncey-garrett/zsh-prompt-garrett)
-- [Seti](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes) color scheme
+# Contents of this setup
 
-# Development setup
+**Terminal**
+![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.png)  
 
-- [Homebrew](http://brew.sh/)
-- [nginx](https://nginx.org/) (using `brew install nginx`, see [etc/nginx](etc/nginx))
-- [MySQL](https://www.mysql.com/) (using `brew install mysql`)
-- [PHP7](https://secure.php.net/) (using `brew install php70`, see [Homebrew/homebrew-php#installation](https://github.com/Homebrew/homebrew-php#installation))
-- [Sequel Pro](http://www.sequelpro.com/)
-- [dnsmasq](dnsmasq.md)
+It's [iTerm2] (custom compiled) with
 
-# Coding
+- [borderless-padding] patch
+- [FiraCode] (14pt) as font
+- [Cousine for Powerline] (14pt) as non-ASCII font
+- [Prezto] with [garrett prompt]
+- [Seti] color scheme
 
-![Screenshot of Atom](https://mzdr.github.io/osx/atom.png)  
+**Web development**
+- [nginx]
+- [MySQL]
+- [PHP7]
 
-Using the [Atom](https://atom.io) editor with
-- [Material UI](https://atom.io/themes/atom-material-ui)
-- [Material Syntax](https://atom.io/themes/atom-material-syntax)
-- [FiraCode](https://github.com/tonsky/FiraCode) as font (don't forget: `atom-text-editor { text-rendering:optimizeLegibility }`)
-- [Emmet](https://atom.io/packages/emmet)
-- [file-icons](https://atom.io/packages/file-icons)
-- [DocBlockr](https://atom.io/packages/docblockr)
-- [Sort Lines](https://atom.io/packages/sort-lines)
-- [Copy Path](https://atom.io/packages/copy-path)
-- [Todo Show](https://atom.io/packages/todo-show)
-- [Livestyle Anaylzer](https://atom.io/packages/livestyle-atom)
-- [Pigments](https://atom.io/packages/pigments)
-- [Highlight Selected](https://atom.io/packages/highlight-selected)
-- [HTML Head Snippets](https://atom.io/packages/html-head-snippets)
+**Fonts**
+- [FiraCode]
+- [CamingoCode]
+- [Anonymous Pro]
+- [Inconsolata]
 
-# Finder & co.
-- [Spectacle app](https://www.spectacleapp.com/)
-- [FileShuttle](http://fileshuttle.io/)
-- [1Clipboard](http://1clipboard.io/)
+**Coding**
+<h6 align="center"><sub>(Screenshot shows [Native-UI] with [Fizzy] syntax)</sub></h6>
 
-# Browser
-Using those extensions
-- [Ghostery](https://www.ghostery.com/try-us/download-browser-extension/)
-- [HTTPS Everywhere](https://www.eff.org/de/https-everywhere)
-- [JSONView](http://jsonview.com/)
-- [EditThisCookie](http://www.editthiscookie.com/)
+![Screenshot of Atom](https://mzdr.github.io/macos/atom-light.png)  
 
-# Miscellaneous
-- [f.lux](https://justgetflux.com/)
+Using the [Atom] editor with
+- [Emmet]
+- [File Icons]
+- [DocBlockr]
+- [Sort Lines]
+- [Colornamer]
+- [Color Picker]
+- [Pigments]
+- [Tool Bar]
+- [Git Control]
+- [Todo Show]
+- [Highlight Selected]
+- [HTML Head Snippets]
+- [Pretty JSON]
+
+**Desktop apps**
+- [Google Chrome]
+- [Firefox]
+- [Opera]
+- [Atom]
+- [Slack]
+- [Harvest]
+- [Enpass]
+- [Sequel Pro]
+- [Dropbox]
+- [Spectacle app]
+- [1Clipboard]
+- [Shiori]
+- [VLC]
+
+**Browser extensions**
+- [Ghostery]
+- [HTTPS Everywhere]
+- [JSONView]
+- [EditThisCookie]
+
+
+<!-- Terminal -->
+[iTerm2]: https://github.com/gnachman/iTerm2
+[borderless-padding]: https://github.com/jaredculp/iterm2-borderless-padding
+[Prezto]: https://github.com/sorin-ionescu/prezto
+[garrett prompt]: https://github.com/chauncey-garrett/zsh-prompt-garrett
+[Seti]: https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes
+[Cousine for Powerline]: https://github.com/powerline/fonts
+
+<!-- Desktop apps -->
+[Google Chrome]: https://www.google.de/chrome/
+[Firefox]: https://www.mozilla.org/de/firefox/
+[Opera]: https://www.opera.com/
+[Atom]: https://atom.io/
+[Slack]: https://slack.com/
+[Harvest]: https://www.getharvest.com/
+[Enpass]: https://www.enpass.io/
+[Sequel Pro]: http://www.sequelpro.com/
+[Dropbox]: https://www.dropbox.com/downloading
+[Spectacle app]: https://www.spectacleapp.com/
+[1Clipboard]: http://1clipboard.io/
+[FileShuttle]: http://fileshuttle.io/
+[Shiori]: https://aki-null.net/shiori/
+[VLC]: https://www.videolan.org/vlc/
+[Atom]: https://atom.io
+
+<!-- Web development -->
+[nginx]: https://nginx.org/
+[MySQL]: https://www.mysql.com/
+[PHP7]: https://secure.php.net/
+
+<!-- Fonts -->
+[FiraCode]: https://github.com/tonsky/FiraCode
+[CamingoCode]: http://www.janfromm.de/typefaces/camingomono/camingocode/
+[Anonymous Pro]: http://www.marksimonson.com/fonts/view/anonymous-pro
+[Inconsolata]: http://levien.com/type/myfonts/inconsolata.html
+
+
+<!-- Atom packages -->
+[Native-UI]: https://atom.io/themes/native-ui
+[Fizzy]: https://atom.io/themes/fizzy
+[Emmet]: https://atom.io/packages/emmet
+[File Icons]: https://atom.io/packages/file-icons
+[DocBlockr]: https://atom.io/packages/docblockr
+[Sort Lines]: https://atom.io/packages/sort-lines
+[Todo Show]: https://atom.io/packages/todo-show
+[Pigments]: https://atom.io/packages/pigments
+[Highlight Selected]: https://atom.io/packages/highlight-selected
+[HTML Head Snippets]: https://atom.io/packages/html-head-snippets
+[Colornamer]: https://atom.io/packages/colornamer
+[Color Picker]: https://atom.io/packages/color-picker
+[Pretty JSON]: https://atom.io/packages/pretty-json
+[Tool Bar]: https://atom.io/packages/tool-bar
+[Git Control]: https://atom.io/packages/git-control
+
+<!-- Browser extensions -->
+[Ghostery]: https://www.ghostery.com/try-us/download-browser-extension/
+[HTTPS Everywhere]: https://www.eff.org/de/https-everywhere
+[JSONView]: http://jsonview.com/
+[EditThisCookie]: http://www.editthiscookie.com/
