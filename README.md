@@ -4,70 +4,72 @@
 2. Jump into the directory of the cloned repository. (`cd macOS`)
 3. Run `./install.sh`
 
-# Contents of this setup
+---
 
-**Terminal**
-![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.png)  
+Running the installation will provide you with a…
 
-It's [iTerm2] (custom compiled) with
+0. Super hot **Terminal** 🔥
 
-- [borderless-padding] patch
-- [FiraCode] (14pt) as font
-- [Cousine for Powerline] (14pt) as non-ASCII font
-- [Prezto] with [garrett prompt]
-- [Seti] color scheme
+    ![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.png)  
 
-**Web development**
-- [nginx]
-- [MySQL]
-- [PHP7]
+    Which is [iTerm2] (custom compiled) with
 
-**Fonts**
-- [FiraCode]
-- [CamingoCode]
-- [Anonymous Pro]
-- [Inconsolata]
+    - [borderless-padding] patch
+    - [FiraCode] (14pt) as font
+    - [Cousine for Powerline] (14pt) as non-ASCII font
+    - [Prezto] with [garrett prompt]
+    - [Seti] color scheme
 
-**Coding**
-<h6 align="center"><sub>(Screenshot shows [Native-UI] with [Fizzy] syntax)</sub></h6>
+0. Super fast 🚓 💨 **web development**  setup
+    - [nginx]
+    - [MySQL]
+    - [PHP7]
+    - Auto-mapping of *.dev with dnsmasq
 
-![Screenshot of Atom](https://mzdr.github.io/macos/atom-light.png)  
+0. Nice stack of (coding optimized 👀) **fonts**
+    - [FiraCode]
+    - [CamingoCode]
+    - [Anonymous Pro]
+    - [Inconsolata]
 
-Using the [Atom] editor with
-- [Emmet]
-- [File Icons]
-- [DocBlockr]
-- [Sort Lines]
-- [Colornamer]
-- [Color Picker]
-- [Pigments]
-- [Tool Bar]
-- [Git Control]
-- [Todo Show]
-- [Highlight Selected]
-- [HTML Head Snippets]
-- [Pretty JSON]
+0. 💪🏻 **[Atom]** the default text editor  
+    ![Screenshot of Atom](https://mzdr.github.io/macos/atom-light.png)  
+    <p align="center"><sub>Screenshot shows <a href="https://atom.io/themes/native-ui">Native UI</a> with <a href="https://atom.io/themes/fizzy">Fizzy</a> syntax</sub></p>
 
-**Desktop apps**
-- [Google Chrome]
-- [Firefox]
-- [Opera]
-- [Atom]
-- [Slack]
-- [Harvest]
-- [Enpass]
-- [Sequel Pro]
-- [Dropbox]
-- [Spectacle app]
-- [1Clipboard]
-- [Shiori]
-- [VLC]
+    - [Emmet]
+    - [File Icons]
+    - [DocBlockr]
+    - [Sort Lines]
+    - [Colornamer]
+    - [Color Picker]
+    - [Pigments]
+    - [Tool Bar]
+    - [Git Control]
+    - [Todo Show]
+    - [Highlight Selected]
+    - [HTML Head Snippets]
+    - [Pretty JSON]
 
-**Browser extensions**
-- [Ghostery]
-- [HTTPS Everywhere]
-- [JSONView]
-- [EditThisCookie]
+0. Set of (my) relevant 🍧 **desktop apps**
+    - [Google Chrome]
+    - [Firefox]
+    - [Opera]
+    - [Atom]
+    - [Slack]
+    - [Harvest]
+    - [Enpass]
+    - [Sequel Pro]
+    - [Dropbox]
+    - [Spectacle app]
+    - [1Clipboard]
+    - [Shiori]
+    - [VLC]
+
+0. Set of useful 🍻 **browser extensions**
+    - [Ghostery]
+    - [HTTPS Everywhere]
+    - [JSONView]
+    - [EditThisCookie]
 
 
 <!-- Terminal -->
@@ -108,8 +110,6 @@ Using the [Atom] editor with
 
 
 <!-- Atom packages -->
-[Native-UI]: https://atom.io/themes/native-ui
-[Fizzy]: https://atom.io/themes/fizzy
 [Emmet]: https://atom.io/packages/emmet
 [File Icons]: https://atom.io/packages/file-icons
 [DocBlockr]: https://atom.io/packages/docblockr
