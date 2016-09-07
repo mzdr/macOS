@@ -6,9 +6,9 @@
 
 ---
 
-Running the installation will provide you with a…
+Running the installation will provide you with…
 
-0. Super hot **Terminal** 🔥
+0. A super hot **Terminal** 🔥
 
     ![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.png)  
 
@@ -20,19 +20,19 @@ Running the installation will provide you with a…
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
 
-0. Super fast 🚓 💨 **web development**  setup
+0. A ridiculously fast 🚓 💨 **web development**  setup
     - [nginx]
     - [MySQL]
     - [PHP7]
-    - Auto-mapping of *.dev with dnsmasq
+    - Auto-mapping of \*.dev domains with dnsmasq
 
-0. Nice stack of (coding optimized 👀) **fonts**
+0. A nice stack of (coding optimized 👀) **fonts**
     - [FiraCode]
     - [CamingoCode]
     - [Anonymous Pro]
     - [Inconsolata]
 
-0. 💪🏻 **[Atom]** the default text editor  
+0. 💪🏻 **[Atom]** as the default text editor and a couple of superb packages  
     ![Screenshot of Atom](https://mzdr.github.io/macos/atom-light.png)  
     <p align="center"><sub>Screenshot shows <a href="https://atom.io/themes/native-ui">Native UI</a> with <a href="https://atom.io/themes/fizzy">Fizzy</a> syntax</sub></p>
 
@@ -44,13 +44,15 @@ Running the installation will provide you with a…
     - [Color Picker]
     - [Pigments]
     - [Tool Bar]
+    - [Flex Tool Bar]
+    - [Project Manager]
     - [Git Control]
     - [Todo Show]
     - [Highlight Selected]
     - [HTML Head Snippets]
     - [Pretty JSON]
 
-0. Set of (my) relevant 🍧 **desktop apps**
+0. A set of (my) relevant 🍧 **desktop apps**
     - [Google Chrome]
     - [Firefox]
     - [Opera]
@@ -65,7 +67,7 @@ Running the installation will provide you with a…
     - [Shiori]
     - [VLC]
 
-0. Set of useful 🍻 **browser extensions**
+0. A set of useful 🍻 **browser extensions**
     - [Ghostery]
     - [HTTPS Everywhere]
     - [JSONView]
@@ -122,7 +124,9 @@ Running the installation will provide you with a…
 [Color Picker]: https://atom.io/packages/color-picker
 [Pretty JSON]: https://atom.io/packages/pretty-json
 [Tool Bar]: https://atom.io/packages/tool-bar
+[Flex Tool Bar]: https://atom.io/packages/flex-tool-bar
 [Git Control]: https://atom.io/packages/git-control
+[Project Manager]: https://atom.io/packages/project-manager
 
 <!-- Browser extensions -->
 [Ghostery]: https://www.ghostery.com/try-us/download-browser-extension/

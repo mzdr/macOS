@@ -47,4 +47,4 @@ run sudo cp -vR $pwd/etc/nginx /etc
 task 'Installing Atom packages/themes…'
 run apm install emmet file-icons docblockr sort-lines todo-show \
 pigments color-picker highlight-selected html-head-snippets pretty-json \
-tool-bar git-control native-ui colornamer
+tool-bar git-control native-ui colornamer project-manager flex-tool-bar
