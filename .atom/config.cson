@@ -1,0 +1,57 @@
+"*":
+  autosave:
+    enabled: true
+  colornamer:
+    format: "kebabcase"
+  core:
+    disabledPackages: [
+      "background-tips"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".sass-cache"
+      ".idea"
+    ]
+    themes: [
+      "one-dark-ui"
+      "chester-atom-syntax"
+    ]
+  editor:
+    fontFamily: "Fira Code"
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "55e744ef-d3cd-d5d1-2156-7300b28614ce"
+  "find-and-replace":
+    closeFindPanelAfterSearch: true
+    openProjectFindResultsInRightPane: true
+  "fuzzy-finder":
+    preserveLastSearch: true
+  "git-control":
+    noFastForward: true
+  "git-diff":
+    showIconsInEditorGutter: true
+  "markdown-preview":
+    breakOnSingleNewline: true
+    liveUpdate: false
+    useGitHubStyle: true
+  tabs:
+    addNewTabsAtEnd: true
+    enableVcsColoring: true
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
+  "tree-view":
+    autoReveal: true
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
