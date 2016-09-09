@@ -17,6 +17,7 @@
       ".sass-cache"
       ".idea"
     ]
+    projectHome: "/Users/sp/Projects"
     themes: [
       "one-dark-ui"
       "chester-atom-syntax"
@@ -42,6 +43,8 @@
     breakOnSingleNewline: true
     liveUpdate: false
     useGitHubStyle: true
+  "project-manager":
+    includeGitRepositories: true
   tabs:
     addNewTabsAtEnd: true
     enableVcsColoring: true
