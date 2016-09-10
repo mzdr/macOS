@@ -30,6 +30,9 @@ run '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/i
 run brew tap caskroom/cask
 run brew tap caskroom/fonts
 
+task 'Installing CLI apps…'
+run brew install git composer z
+
 task 'Installing desktop apps…'
 run brew cask install google-chrome firefox opera atom slack harvest \
 enpass sequel-pro dropbox spectacle 1clipboard shiori vlc
