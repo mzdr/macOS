@@ -24,6 +24,7 @@ run 'ln -sfv $pwd/.atom/projects.cson ~/.atom'
 run 'ln -sfv $pwd/.atom/snippets.cson ~/.atom'
 run 'ln -sfv $pwd/.atom/toolbar.cson ~/.atom'
 run 'ln -sfv $pwd/.atom/styles.less ~/.atom'
+run 'ln -sfv $pwd/.iTerm2 ~'
 
 task 'Installing Homebrew…'
 run '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
