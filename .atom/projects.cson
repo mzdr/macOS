@@ -1,15 +1,46 @@
-immostreet:
-  title: "Immostreet"
-  paths: [
-    "/Users/sp/Sites/clients/immostreet"
-  ]
-cerebral:
-  title: "Cerebral"
-  paths: [
-    "/Users/sp/Sites/clients/hilfsangebote"
-  ]
-trainingsplaner:
-  title: "Trainingsplaner"
-  paths: [
-    "/Users/sp/Sites/clients/trainingsplaner"
-  ]
+[
+  {
+    title: "Immostreet"
+    group: ""
+    paths: [
+      "/Users/sp/Sites/clients/immostreet"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Cerebral"
+    group: ""
+    paths: [
+      "/Users/sp/Sites/clients/hilfsangebote"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Trainingsplaner"
+    group: ""
+    paths: [
+      "/Users/sp/Sites/clients/trainingsplaner"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Raiffeisen Immoportal"
+    group: ""
+    paths: [
+      "/Users/sp/Sites/clients/hg5_raiffeisen"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+]
