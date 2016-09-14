@@ -31,7 +31,6 @@
   "exception-reporting":
     userId: "55e744ef-d3cd-d5d1-2156-7300b28614ce"
   "find-and-replace":
-    closeFindPanelAfterSearch: true
     openProjectFindResultsInRightPane: true
   "fuzzy-finder":
     preserveLastSearch: true
