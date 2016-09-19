@@ -22,6 +22,12 @@
       "one-dark-ui"
       "chester-atom-syntax"
     ]
+  docblockr:
+    align_tags: "no"
+    extra_tags: [
+      ""
+    ]
+    lower_case_primitives: true
   editor:
     fontFamily: "Fira Code"
     showIndentGuide: true
