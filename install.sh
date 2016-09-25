@@ -28,7 +28,6 @@ run 'ln -sfv $pwd/.iTerm2 ~'
 
 task 'Installing Homebrew…'
 run '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
-run brew tap caskroom/cask
 run brew tap caskroom/fonts
 
 task 'Installing CLI apps…'
