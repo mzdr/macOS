@@ -136,7 +136,5 @@
   enabled = true
 [include]
   path = .gitconfig.user
-[user]
-    name = Sebastian Prein
 [credential]
     helper = cache --timeout=3600
