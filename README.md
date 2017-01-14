@@ -14,9 +14,9 @@ Running the installation will provide you with…
 
     Which is [iTerm2] with
 
-    - [Z-Shell] (zsh)
-    - [FiraCode] (14pt) as font
-    - [Cousine for Powerline] (14pt) as non-ASCII font
+    - [Z-Shell] \(zsh)
+    - [FiraCode] \(14pt) as font
+    - [Cousine for Powerline] \(14pt) as non-ASCII font
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
 
