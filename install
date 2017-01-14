@@ -431,7 +431,6 @@ run brew cask install \
     google-chrome \
     harvest \
     iterm2 \
-    opera \
     sequel-pro \
     shiori \
     slack \
