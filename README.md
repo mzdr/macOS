@@ -15,8 +15,8 @@ Running the installation will provide you with…
     Which is [iTerm2] with
 
     - [Z-Shell] \(zsh)
-    - [FiraCode] \(14pt) as font
-    - [Cousine for Powerline] \(14pt) as non-ASCII font
+    - [CamingoCode] \(13pt) as font
+    - Anonymice [Powerline] \(14pt) as non-ASCII font
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
 
@@ -76,11 +76,10 @@ Running the installation will provide you with…
 <!-- Terminal -->
 [Z-Shell]: http://www.zsh.org/
 [iTerm2]: https://github.com/gnachman/iTerm2
-[borderless-padding]: https://github.com/jaredculp/iterm2-borderless-padding
 [Prezto]: https://github.com/sorin-ionescu/prezto
 [garrett prompt]: https://github.com/chauncey-garrett/zsh-prompt-garrett
 [Seti]: https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes
-[Cousine for Powerline]: https://github.com/powerline/fonts
+[Powerline]: https://github.com/powerline/fonts
 
 <!-- Desktop apps -->
 [Google Chrome]: https://www.google.de/chrome/
