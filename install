@@ -312,14 +312,15 @@ esac
 
 chapter "Adjusting Dock, Dashboard, and hot corners"
 
-step "Set the icon size of Dock items to 36 pixels? [Y/n]: " ""
-case $(read choice; echo $choice) in
+step "Change the icon size (in px) of Dock items? [48/n]: " ""
+read tilesize
+case $tilesize in
     [nN] )
         echo ""
         ;;
-    [yY] | * )
+    * )
         echo ""
-        run defaults write com.apple.dock tilesize -int 36
+        run defaults write com.apple.dock tilesize -int ${tilesize:-48}
         ;;
 esac
 
