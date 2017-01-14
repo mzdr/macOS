@@ -12,8 +12,9 @@ Running the installation will provide you with…
 
     ![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.png)  
 
-    Which is [iTerm2] (custom compiled) with
+    Which is [iTerm2] with
 
+    - [Z-Shell] (zsh)
     - [FiraCode] (14pt) as font
     - [Cousine for Powerline] (14pt) as non-ASCII font
     - [Prezto] with [garrett prompt]
@@ -73,6 +74,7 @@ Running the installation will provide you with…
 
 
 <!-- Terminal -->
+[Z-Shell]: http://www.zsh.org/
 [iTerm2]: https://github.com/gnachman/iTerm2
 [borderless-padding]: https://github.com/jaredculp/iterm2-borderless-padding
 [Prezto]: https://github.com/sorin-ionescu/prezto

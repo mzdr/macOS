@@ -402,20 +402,6 @@ case $(read choice; echo $choice) in
         ;;
 esac
 
-chapter "Restoring app settings"
-
-step "Linking dotfiles\n"
-run ln -sfv $cwd/.zshrc ~
-run ln -sfv $cwd/.zpreztorc ~
-run ln -sfv $cwd/.gitconfig ~
-run mkdir ~/.atom
-run ln -sfv $cwd/.atom/config.cson ~/.atom
-run ln -sfv $cwd/.atom/keymap.cson ~/.atom
-run ln -sfv $cwd/.atom/snippets.cson ~/.atom
-run ln -sfv $cwd/.atom/toolbar.cson ~/.atom
-run ln -sfv $cwd/.atom/styles.less ~/.atom
-run ln -sfv $cwd/.iTerm2 ~
-
 chapter "Installing…"
 
 step "Homebrew\n"
@@ -485,3 +471,32 @@ run apm install \
     colornamer \
     project-manager \
     flex-tool-bar
+
+step "Prezto\n"
+
+if [ ! -d ~/.zprezto ]; then
+    run git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
+else
+    run '(cd ~/.zprezto; git pull && git submodule update --init --recursive)'
+fi
+
+for rcfile in `find ~/.zprezto/runcoms ! -name "*.md" -type f`
+do
+  run ln -sfv $rcfile ~/.$(basename $rcfile)
+done
+
+run chsh -s /bin/zsh
+
+chapter "Restoring app settings"
+
+step "Linking dotfiles\n"
+run ln -sfv $cwd/.zshrc ~
+run ln -sfv $cwd/.zpreztorc ~
+run ln -sfv $cwd/.gitconfig ~
+run mkdir -v ~/.atom
+run ln -sfv $cwd/.atom/config.cson ~/.atom
+run ln -sfv $cwd/.atom/keymap.cson ~/.atom
+run ln -sfv $cwd/.atom/snippets.cson ~/.atom
+run ln -sfv $cwd/.atom/toolbar.cson ~/.atom
+run ln -sfv $cwd/.atom/styles.less ~/.atom
+run ln -sfv $cwd/.iTerm2 ~
