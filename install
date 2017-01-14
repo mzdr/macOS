@@ -498,7 +498,7 @@ step "Prezto\n"
 if [ ! -d ~/.zprezto ]; then
     run git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
 else
-    run '(cd ~/.zprezto; git pull && git submodule update --init --recursive)'
+    run '(cd ~/.zprezto && git pull && git submodule update --init --recursive)'
 fi
 
 for rcfile in `find ~/.zprezto/runcoms ! -name "*.md" -type f`
@@ -507,6 +507,7 @@ do
 done
 
 run chsh -s /bin/zsh
+run '(cd ~/.zprezto/modules/prompt/functions && curl -s -O https://raw.githubusercontent.com/chauncey-garrett/zsh-prompt-garrett/master/prompt_garrett_setup)'
 
 chapter "Restoring…"
 
