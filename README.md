@@ -14,7 +14,6 @@ Running the installation will provide you with…
 
     Which is [iTerm2] (custom compiled) with
 
-    - [borderless-padding] patch
     - [FiraCode] (14pt) as font
     - [Cousine for Powerline] (14pt) as non-ASCII font
     - [Prezto] with [garrett prompt]
@@ -24,7 +23,6 @@ Running the installation will provide you with…
     - [nginx]
     - [MySQL]
     - [PHP7]
-    - Auto-mapping of \*.dev domains with dnsmasq
 
 0. A nice stack of (coding optimized 👀) **fonts**
     - [FiraCode]
@@ -32,7 +30,7 @@ Running the installation will provide you with…
     - [Anonymous Pro]
     - [Inconsolata]
 
-0. 💪🏻 **[Atom]** as the default text editor and a couple of superb packages  
+0. 💪 **[Atom]** as the default text editor and a couple of superb packages  
     ![Screenshot of Atom](https://mzdr.github.io/macos/atom-light.png)  
     <p align="center"><sub>Screenshot shows <a href="https://atom.io/themes/native-ui">Native UI</a> with <a href="https://atom.io/themes/fizzy">Fizzy</a> syntax</sub></p>
 

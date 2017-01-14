@@ -404,7 +404,7 @@ esac
 
 chapter "Restoring app settings"
 
-step "Linking dotfiles"
+step "Linking dotfiles\n"
 run ln -sfv $cwd/.zshrc ~
 run ln -sfv $cwd/.zpreztorc ~
 run ln -sfv $cwd/.gitconfig ~
@@ -418,21 +418,25 @@ run ln -sfv $cwd/.iTerm2 ~
 
 chapter "Installing…"
 
-step "Homebrew"
-run '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+step "Homebrew\n"
+which -s brew
+if [[ $? != 0 ]] ; then
+    run '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+else
+    run brew update
+fi
 
-step "CLI apps"
+step "CLI apps\n"
 
 run brew install \
-    composer \
     git \
     mas \
     node \
     z
 
-step "Desktop apps"
+step "Desktop apps\n"
 
-run cask install \
+run brew cask install \
     1clipboard \
     atom \
     dropbox \
@@ -448,10 +452,10 @@ run cask install \
     spectacle \
     vlc
 
-step "Fonts"
+step "Fonts\n"
 
 run brew tap caskroom/fonts
-run cask install \
+run brew cask install \
     font-fira-code \
     font-camingocode \
     font-inconsolata \
@@ -459,10 +463,10 @@ run cask install \
 
 # step "(Web) Development setup"
 # run brew tap homebrew/php
-# run brew install nginx mysql php71
+# run brew install nginx mysql php71 composer
 # run sudo cp -vR $cwd/etc/nginx /etc
 
-step "Atom packages/themes"
+step "Atom packages/themes\n"
 
 run apm install \
     emmet \
