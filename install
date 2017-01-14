@@ -486,16 +486,22 @@ done
 
 run chsh -s /bin/zsh
 
-chapter "Restoring app settings"
+chapter "Restoring…"
 
-step "Linking dotfiles\n"
+step "Dotfiles\n"
 run ln -sfv $cwd/.zshrc ~
 run ln -sfv $cwd/.zpreztorc ~
 run ln -sfv $cwd/.gitconfig ~
+
+step "Atom preferences\n"
 run mkdir -v ~/.atom
 run ln -sfv $cwd/.atom/config.cson ~/.atom
 run ln -sfv $cwd/.atom/keymap.cson ~/.atom
 run ln -sfv $cwd/.atom/snippets.cson ~/.atom
 run ln -sfv $cwd/.atom/toolbar.cson ~/.atom
 run ln -sfv $cwd/.atom/styles.less ~/.atom
+
+step "iTerm2 preferences\n"
 run ln -sfv $cwd/.iTerm2 ~
+run defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -int 1
+run defaults write com.googlecode.iterm2 PrefsCustomFolder ~/.iTerm2
