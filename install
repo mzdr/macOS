@@ -457,6 +457,7 @@ for font in \
     font-camingocode \
     font-inconsolata \
     font-anonymous-pro \
+    font-anonymice-powerline \
 ; do
     if ! brew cask list -1 | grep -q "^${font}\$"; then
         run brew cask install $font
