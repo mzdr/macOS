@@ -2,7 +2,7 @@
 
 1. Clone this repository. (`git clone …`)
 2. Jump into the directory of the cloned repository. (`cd macOS`)
-3. Run `./install.sh`
+3. Run `./install`
 
 ---
 
