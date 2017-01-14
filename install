@@ -414,15 +414,20 @@ fi
 
 step "CLI apps\n"
 
-run brew install \
+for app in \
     git \
     mas \
     node \
-    z
+    z \
+; do
+    if ! brew list -1 | grep -q "^${app}\$"; then
+        run brew install $app
+    fi
+done
 
 step "Desktop apps\n"
 
-run brew cask install \
+for app in \
     1clipboard \
     atom \
     dropbox \
@@ -435,16 +440,28 @@ run brew cask install \
     shiori \
     slack \
     spectacle \
-    vlc
+    vlc \
+; do
+    if ! brew cask list -1 | grep -q "^${app}\$"; then
+        run brew cask install $app
+    fi
+done
+
 
 step "Fonts\n"
 
 run brew tap caskroom/fonts
-run brew cask install \
+
+for font in \
     font-fira-code \
     font-camingocode \
     font-inconsolata \
-    font-anonymous-pro
+    font-anonymous-pro \
+; do
+    if ! brew cask list -1 | grep -q "^${font}\$"; then
+        run brew cask install $font
+    fi
+done
 
 # step "(Web) Development setup"
 # run brew tap homebrew/php
@@ -453,7 +470,7 @@ run brew cask install \
 
 step "Atom packages/themes\n"
 
-run apm install \
+for package in \
     emmet \
     file-icons \
     docblockr \
@@ -469,7 +486,12 @@ run apm install \
     native-ui \
     colornamer \
     project-manager \
-    flex-tool-bar
+    flex-tool-bar \
+; do
+    if [ ! -d ~/.atom/packages/$package ]; then
+        run apm install $package
+    fi
+done
 
 step "Prezto\n"
 
