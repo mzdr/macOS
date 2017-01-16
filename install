@@ -10,8 +10,8 @@ dot="\033[33m▸ $reset"
 dim="\033[2m"
 bold="\033[1m"
 
-# Current working directory
-cwd=$(pwd)
+# Get full directory name of this script
+cwd="$(cd "$(dirname "$0")" && pwd)"
 
 # Keep-alive: update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
@@ -415,12 +415,7 @@ fi
 
 step "CLI apps\n"
 
-for app in \
-    git \
-    mas \
-    node \
-    z \
-; do
+for app in $(<$cwd/.stack/cli); do
     if ! brew list -1 | grep -q "^${app}\$"; then
         run brew install $app
     fi
@@ -428,21 +423,7 @@ done
 
 step "Desktop apps\n"
 
-for app in \
-    1clipboard \
-    atom \
-    dropbox \
-    enpass \
-    firefox \
-    google-chrome \
-    harvest \
-    iterm2 \
-    sequel-pro \
-    shiori \
-    slack \
-    spectacle \
-    vlc \
-; do
+for app in $(<$cwd/.stack/cli); do
     if ! brew cask list -1 | grep -q "^${app}\$"; then
         run brew cask install $app
     fi
@@ -453,13 +434,7 @@ step "Fonts\n"
 
 run brew tap caskroom/fonts
 
-for font in \
-    font-fira-code \
-    font-camingocode \
-    font-inconsolata \
-    font-anonymous-pro \
-    font-anonymice-powerline \
-; do
+for font in $(<$cwd/.stack/fonts); do
     if ! brew cask list -1 | grep -q "^${font}\$"; then
         run brew cask install $font
     fi
@@ -472,24 +447,7 @@ done
 
 step "Atom packages/themes\n"
 
-for package in \
-    emmet \
-    file-icons \
-    docblockr \
-    sort-lines \
-    todo-show \
-    pigments \
-    color-picker \
-    highlight-selected \
-    html-head-snippets \
-    pretty-json \
-    tool-bar \
-    git-control \
-    native-ui \
-    colornamer \
-    project-manager \
-    flex-tool-bar \
-; do
+for package in $(<$cwd/.stack/atom); do
     if [ ! -d ~/.atom/packages/$package ]; then
         run apm install $package
     fi

@@ -1,10 +1,18 @@
 # Installation
 
-1. Clone this repository. (`git clone …`)
-2. Jump into the directory of the cloned repository. (`cd macOS`)
+1. Clone this repository.
+2. Jump into the directory of the cloned repository.
 3. Run `./install`
 
----
+##
+
+For the lazy… 😁
+
+```shell
+git clone git@github.com:mzdr/macOS.git ~/.macOS && ~/.macOS/install
+```
+
+##
 
 Running the installation will provide you with…
 
@@ -54,7 +62,6 @@ Running the installation will provide you with…
 0. A set of (my) relevant 🍧 **desktop apps**
     - [Google Chrome]
     - [Firefox]
-    - [Opera]
     - [Atom]
     - [Slack]
     - [Harvest]
@@ -84,7 +91,6 @@ Running the installation will provide you with…
 <!-- Desktop apps -->
 [Google Chrome]: https://www.google.de/chrome/
 [Firefox]: https://www.mozilla.org/de/firefox/
-[Opera]: https://www.opera.com/
 [Atom]: https://atom.io/
 [Slack]: https://slack.com/
 [Harvest]: https://www.getharvest.com/
