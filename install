@@ -423,7 +423,7 @@ done
 
 step "Desktop apps\n"
 
-for app in $(<$cwd/.stack/cli); do
+for app in $(<$cwd/.stack/desktop); do
     if ! brew cask list -1 | grep -q "^${app}\$"; then
         run brew cask install $app
     fi
