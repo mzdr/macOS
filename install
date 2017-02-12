@@ -477,7 +477,7 @@ run ln -sfv $cwd/.zpreztorc ~
 run ln -sfv $cwd/.gitconfig ~
 
 step "Atom preferences\n"
-run mkdir -v ~/.atom
+run mkdir -pv ~/.atom
 run ln -sfv $cwd/.atom/config.cson ~/.atom
 run ln -sfv $cwd/.atom/keymap.cson ~/.atom
 run ln -sfv $cwd/.atom/snippets.cson ~/.atom
@@ -488,3 +488,6 @@ step "iTerm2 preferences\n"
 run ln -sfv $cwd/.iTerm2 ~
 run defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -int 1
 run defaults write com.googlecode.iterm2 PrefsCustomFolder ~/.iTerm2
+
+step "VLC preferences\n"
+run ln -sfv $cwd/org.videolan.vlc ~/Library/Preferences
