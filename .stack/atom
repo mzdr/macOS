@@ -1,3 +1,4 @@
+chester-atom-syntax
 color-picker
 colornamer
 docblockr
@@ -7,7 +8,6 @@ flex-tool-bar
 git-control
 highlight-selected
 html-head-snippets
-native-ui
 pigments
 pretty-json
 project-manager
