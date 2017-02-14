@@ -1,22 +1,18 @@
+![Desktop Screenshot](https://mzdr.github.io/macos/screenshot.jpg)  
+
 # Installation
 
-1. Clone this repository.
-2. Jump into the directory of the cloned repository.
-3. Run `./install`
+Run the command below in your terminal and the installation will start automatically.
 
-##
-
-For the lazy… 😁
+Just follow the prompts and you’ll be fine. 👌
 
 ```shell
-git clone git@github.com:mzdr/macOS.git ~/.macOS && ~/.macOS/install
+git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 ```
 
-##
+# What will I get?
 
-Running the installation will provide you with…
-
-0. A super hot **Terminal** 🔥
+0. A super 🔥 **Terminal**…
 
     ![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.png)  
 
@@ -28,20 +24,23 @@ Running the installation will provide you with…
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
 
-0. A ridiculously fast 🚓 💨 **web development**  setup
+0. A ridiculously fast 🚓 💨 **web development** setup…
     - [nginx]
     - [MySQL]
     - [PHP7]
 
-0. A nice stack of (coding optimized 👀) **fonts**
+0. A nice stack of (coding optimized 👀) **fonts**…
     - [FiraCode]
     - [CamingoCode]
     - [Anonymous Pro]
     - [Inconsolata]
 
-0. 💪 **[Atom]** as the default text editor and a couple of superb packages  
-    ![Screenshot of Atom](https://mzdr.github.io/macos/atom-light.png)  
-    <p align="center"><sub>Screenshot shows <a href="https://atom.io/themes/native-ui">Native UI</a> with <a href="https://atom.io/themes/fizzy">Fizzy</a> syntax</sub></p>
+0. 💪 **[Atom]** as the default text editor and a couple of superb packages…
+
+    <p align="center">
+        <img src="https://mzdr.github.io/macos/atom.jpg" alt="Screenshot of Atom">
+        <sub>👆 <a href="https://atom.io/themes/one-dark-ui">One Dark UI</a> with <a href="https://atom.io/themes/chester-atom-syntax">Chester Atom</a> syntax and Fira Code.</sub>
+    </p>
 
     - [Emmet]
     - [File Icons]
@@ -59,7 +58,7 @@ Running the installation will provide you with…
     - [HTML Head Snippets]
     - [Pretty JSON]
 
-0. A set of (my) relevant 🍧 **desktop apps**
+0. A set of (my) relevant 🍧 **desktop apps**…
     - [Google Chrome]
     - [Firefox]
     - [Atom]
@@ -73,12 +72,18 @@ Running the installation will provide you with…
     - [Shiori]
     - [VLC]
 
-0. A set of useful 🍻 **browser extensions**
+0. A set of useful 🍻 **browser extensions**…
     - [Ghostery]
     - [HTTPS Everywhere]
     - [JSONView]
     - [EditThisCookie]
 
+#  
+
+<p align="center">
+    <a href="https://sebastianprein.com/">sebastianprein.com</a> ・
+    <a href="https://twitter.com/mrprein">@mrprein</a>
+</p>
 
 <!-- Terminal -->
 [Z-Shell]: http://www.zsh.org/
