@@ -491,3 +491,17 @@ run defaults write com.googlecode.iterm2 PrefsCustomFolder ~/.iTerm2
 
 step "VLC preferences\n"
 run ln -sfv $cwd/org.videolan.vlc ~/Library/Preferences
+
+step "Set default wallpaper\n"
+run sqlite3 "~/Library/Application\ Support/Dock/desktoppicture.db" "\"\
+DELETE FROM data; \
+DELETE FROM displays; \
+DELETE FROM pictures; \
+DELETE FROM preferences; \
+DELETE FROM prefs; \
+DELETE FROM spaces; \
+INSERT INTO pictures (space_id, display_id) VALUES (null, null); \
+INSERT INTO data (value) VALUES ('${cwd}/wallpaper.jpg'); \
+INSERT INTO preferences (key, data_id, picture_id) VALUES (1, 1, 1); \
+\""
+run killall Dock
