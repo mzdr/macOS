@@ -12,7 +12,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
 # What will I get?
 
-0. A super 🔥 **Terminal**…
+1. A super 🔥 **Terminal**…
 
     ![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.jpg)  
 
@@ -24,18 +24,18 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
 
-0. A ridiculously fast 🚓 💨 **web development** setup…
+1. A ridiculously fast 🚓 💨 **web development** setup…
     - [nginx]
     - [MySQL]
     - [PHP7]
 
-0. A nice stack of (coding optimized 👀) **fonts**…
+1. A nice stack of (coding optimized 👀) **fonts**…
     - [FiraCode]
     - [CamingoCode]
     - [Anonymous Pro]
     - [Inconsolata]
 
-0. 💪 **[Atom]** as the default text editor and a couple of superb packages…
+1. 💪 **[Atom]** as the default text editor and a couple of superb packages…
 
     <p align="center">
         <img src="https://mzdr.github.io/macos/atom.jpg" alt="Screenshot of Atom">
@@ -58,7 +58,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [HTML Head Snippets]
     - [Pretty JSON]
 
-0. A set of (my) relevant 🍧 **desktop apps**…
+1. A set of (my) relevant 🍧 **desktop apps**…
     - [Google Chrome]
     - [Firefox]
     - [Atom]
@@ -72,7 +72,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Shiori]
     - [VLC]
 
-0. A set of useful 🍻 **browser extensions**…
+1. A set of useful 🍻 **browser extensions**…
     - [Ghostery]
     - [HTTPS Everywhere]
     - [JSONView]
