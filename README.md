@@ -14,7 +14,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
 0. A super 🔥 **Terminal**…
 
-    ![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.png)  
+    ![iTerm2 Screenshot](https://mzdr.github.io/macos/iTerm2.jpg)  
 
     Which is [iTerm2] with
 
