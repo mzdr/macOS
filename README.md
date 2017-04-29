@@ -82,7 +82,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
 <p align="center">
     <a href="https://sebastianprein.com/">sebastianprein.com</a> ・
-    <a href="https://twitter.com/mrprein">@mrprein</a>
+    <a href="https://twitter.com/_mzdr">@_mzdr</a>
 </p>
 
 <!-- Terminal -->
