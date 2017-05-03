@@ -1,7 +1,10 @@
+blame
 chester-atom-syntax
+click-link
 color-picker
 colornamer
 docblockr
+editorconfig
 emmet
 file-icons
 flex-tool-bar
@@ -12,5 +15,7 @@ pigments
 pretty-json
 project-manager
 sort-lines
+svg-preview
+svgo
 todo-show
 tool-bar

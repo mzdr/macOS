@@ -42,21 +42,26 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
         <sub>👆 <a href="https://atom.io/themes/one-dark-ui">One Dark UI</a> with <a href="https://atom.io/themes/chester-atom-syntax">Chester Atom</a> syntax and Fira Code.</sub>
     </p>
 
+    - [Blame]
+    - [Click-Link]
+    - [Color Picker]
+    - [Colornamer]
+    - [DocBlockr]
+    - [EditorConfig]
     - [Emmet]
     - [File Icons]
-    - [DocBlockr]
-    - [Sort Lines]
-    - [Colornamer]
-    - [Color Picker]
-    - [Pigments]
-    - [Tool Bar]
     - [Flex Tool Bar]
-    - [Project Manager]
     - [Git Control]
-    - [Todo Show]
     - [Highlight Selected]
     - [HTML Head Snippets]
+    - [Pigments]
     - [Pretty JSON]
+    - [Project Manager]
+    - [Sort Lines]
+    - [SVG Preview]
+    - [SVGO]
+    - [Todo Show]
+    - [Tool Bar]
 
 1. A set of (my) relevant 🍧 **desktop apps**…
     - [Google Chrome]
@@ -122,21 +127,26 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
 
 <!-- Atom packages -->
+[Blame]: https://atom.io/packages/blame
+[Click-Link]: https://atom.io/packages/click-link
+[Color Picker]: https://atom.io/packages/color-picker
+[Colornamer]: https://atom.io/packages/colornamer
+[DocBlockr]: https://atom.io/packages/docblockr
+[EditorConfig]: https://atom.io/packages/editorconfig
 [Emmet]: https://atom.io/packages/emmet
 [File Icons]: https://atom.io/packages/file-icons
-[DocBlockr]: https://atom.io/packages/docblockr
-[Sort Lines]: https://atom.io/packages/sort-lines
-[Todo Show]: https://atom.io/packages/todo-show
-[Pigments]: https://atom.io/packages/pigments
-[Highlight Selected]: https://atom.io/packages/highlight-selected
-[HTML Head Snippets]: https://atom.io/packages/html-head-snippets
-[Colornamer]: https://atom.io/packages/colornamer
-[Color Picker]: https://atom.io/packages/color-picker
-[Pretty JSON]: https://atom.io/packages/pretty-json
-[Tool Bar]: https://atom.io/packages/tool-bar
 [Flex Tool Bar]: https://atom.io/packages/flex-tool-bar
 [Git Control]: https://atom.io/packages/git-control
+[Highlight Selected]: https://atom.io/packages/highlight-selected
+[HTML Head Snippets]: https://atom.io/packages/html-head-snippets
+[Pigments]: https://atom.io/packages/pigments
+[Pretty JSON]: https://atom.io/packages/pretty-json
 [Project Manager]: https://atom.io/packages/project-manager
+[Sort Lines]: https://atom.io/packages/sort-lines
+[SVG Preview]: https://atom.io/packages/svg-preview
+[SVGO]: https://atom.io/packages/svgo
+[Todo Show]: https://atom.io/packages/todo-show
+[Tool Bar]: https://atom.io/packages/tool-bar
 
 <!-- Browser extensions -->
 [Ghostery]: https://www.ghostery.com/try-us/download-browser-extension/
