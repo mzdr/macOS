@@ -1,17 +1,32 @@
 "*":
   autosave:
     enabled: true
+  blame:
+    gutterFormat: "{author} ({hash})"
   colornamer:
     format: "kebabcase"
   core:
+    closeDeletedFileTabs: true
     disabledPackages: [
       "background-tips"
     ]
-    projectHome: "/Users/sp/Projects"
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+    ]
+    projectHome: "~/Sites"
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "chester-atom-syntax"
     ]
+    titleBar: "custom-inset"
   docblockr:
     align_tags: "no"
     extra_tags: [
@@ -24,8 +39,6 @@
     showInvisibles: true
     tabLength: 4
     tabType: "soft"
-  "exception-reporting":
-    userId: "55e744ef-d3cd-d5d1-2156-7300b28614ce"
   "find-and-replace":
     projectSearchResultsPaneSplitDirection: "right"
   "fuzzy-finder":
@@ -34,12 +47,24 @@
     noFastForward: true
   "git-diff":
     showIconsInEditorGutter: true
+  "git-plus":
+    experimental:
+      useSplitDiff: true
+    general:
+      enableStatusBarIcon: false
+      showFormat: "fuller"
+  "git-projects":
+    rootPath: "~/Sites"
+    sortBy: "Latest modification date"
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
     liveUpdate: false
     useGitHubStyle: true
-  "project-manager":
-    includeGitRepositories: true
+  "split-diff":
+    ignoreWhitespace: true
+    syncHorizontalScroll: true
   "svg-preview":
     openPreviewAutomatically: true
   tabs:

@@ -1,3 +1,4 @@
+
 [
   {
     type: 'button'
@@ -9,17 +10,41 @@
   {
     type: 'button'
     tooltip: 'List projects'
-    dependency: 'project-manager'
-    callback: 'project-manager:list-projects'
+    dependency: 'git-projects'
+    callback: 'git-projects:toggle'
     icon: 'file-submodule'
+  },
+  {
+    type: 'spacer'
   },
   {
     type: 'button'
     tooltip: 'Git Control'
     dependency: 'git-control'
     callback: 'git-control:toggle'
-    icon: 'bullseye'
+    icon: 'mark-github'
+  },
+  {
+    type: 'button'
+    tooltip: 'Blame'
+    dependency: 'blame'
+    callback: 'blame:toggle'
+    icon: 'hand-o-right'
     iconset: 'fa'
+  },
+  {
+    type: 'button'
+    tooltip: 'Git Log Current File'
+    dependency: 'git-plus'
+    callback: 'git-plus:log-current-file'
+    icon: 'git-commit'
+  },
+  {
+    type: 'button'
+    tooltip: 'Git Log'
+    dependency: 'git-plus'
+    callback: 'git-plus:log'
+    icon: 'versions'
   },
   {
     type: 'spacer'
