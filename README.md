@@ -2,7 +2,7 @@
 
 # Installation
 
-Run the command below in your terminal and the installation will start automatically.
+Run the command below in your terminal and the installation will start *automatically*.
 
 Just follow the prompts and you’ll be fine. 👌
 
@@ -24,46 +24,48 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
 
-1. A ridiculously fast 🚓 💨 **web development** setup…
+#  
+
+2. A ridiculously fast 🚓 💨 **web development** setup…
+
     - [nginx]
     - [MySQL]
     - [PHP7]
 
-1. A nice stack of (coding optimized 👀) **fonts**…
+#  
+
+3. A nice stack of (coding optimized 👀) **fonts**…
+
     - [FiraCode]
     - [CamingoCode]
     - [Anonymous Pro]
     - [Inconsolata]
 
-1. 💪 **[Atom]** as the default text editor and a couple of superb packages…
+    <sub>See [`.stack/fonts`](.stack/fonts) for the full list of fonts that will be installed. Adjust it to your personal taste.</sub>
+
+#  
+
+4. 💪 **[Atom]** as the default text editor and a couple of *superb* packages for…
 
     <p align="center">
         <img src="https://mzdr.github.io/macos/atom.jpg" alt="Screenshot of Atom">
         <sub>👆 <a href="https://atom.io/themes/one-dark-ui">One Dark UI</a> with <a href="https://atom.io/themes/chester-atom-syntax">Chester Atom</a> syntax and Fira Code.</sub>
     </p>
 
-    - [Blame]
-    - [Click-Link]
-    - [Color Picker]
-    - [Colornamer]
-    - [DocBlockr]
-    - [EditorConfig]
-    - [Emmet]
-    - [File Icons]
-    - [Flex Tool Bar]
-    - [Git Control]
-    - [Highlight Selected]
-    - [HTML Head Snippets]
-    - [Pigments]
-    - [Pretty JSON]
-    - [Project Manager]
-    - [Sort Lines]
-    - [SVG Preview]
-    - [SVGO]
-    - [Todo Show]
-    - [Tool Bar]
+    - Better Git support ([Blame], [Git Control], [Git Projects], [Git Plus])
+    - Code consistency ([DocBlockr], [EditorConfig], [Sort Lines], [Linter])
+    - Faster coding ([Emmet], [HTML Head Snippets])
+    - Easier reading of code ([Pretty JSON], [Highlight Selected], [Todo Show])
+    - Working with colors ([Color Picker], [Colornamer], [Pigments])
+    - Working with images ([SVGO], [SVG Preview])
+    - Improved UI ([File Icons], [Flex Tool Bar], [Tool Bar], [Hyperclick])
 
-1. A set of (my) relevant 🍧 **desktop apps**…
+    <sub>See [`.stack/atom`](.stack/atom) for the full list of atom package that will be installed. Adjust it to your personal taste.</sub>
+
+#  
+
+5. A set of (my) relevant 🍧 **desktop apps**…
+
     - [Google Chrome]
     - [Firefox]
     - [Atom]
@@ -77,7 +79,12 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Shiori]
     - [VLC]
 
-1. A set of useful 🍻 **browser extensions**…
+    <sub>See [`.stack/desktop`](.stack/desktop) for the full list of desktop app that will be installed. Adjust it to your personal taste.</sub>
+
+#  
+
+6. A set of useful 🍻 **browser extensions**…
+
     - [Ghostery]
     - [HTTPS Everywhere]
     - [JSONView]
@@ -128,7 +135,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
 <!-- Atom packages -->
 [Blame]: https://atom.io/packages/blame
-[Click-Link]: https://atom.io/packages/click-link
 [Color Picker]: https://atom.io/packages/color-picker
 [Colornamer]: https://atom.io/packages/colornamer
 [DocBlockr]: https://atom.io/packages/docblockr
@@ -137,11 +143,14 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [File Icons]: https://atom.io/packages/file-icons
 [Flex Tool Bar]: https://atom.io/packages/flex-tool-bar
 [Git Control]: https://atom.io/packages/git-control
+[Git Plus]: https://atom.io/packages/git-plus
+[Git Projects]: https://atom.io/packages/git-projects
 [Highlight Selected]: https://atom.io/packages/highlight-selected
 [HTML Head Snippets]: https://atom.io/packages/html-head-snippets
+[Hyperclick]: https://atom.io/packages/hyperclick
+[Linter]: https://atom.io/packages/linter
 [Pigments]: https://atom.io/packages/pigments
 [Pretty JSON]: https://atom.io/packages/pretty-json
-[Project Manager]: https://atom.io/packages/project-manager
 [Sort Lines]: https://atom.io/packages/sort-lines
 [SVG Preview]: https://atom.io/packages/svg-preview
 [SVGO]: https://atom.io/packages/svgo
