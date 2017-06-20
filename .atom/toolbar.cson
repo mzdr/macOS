@@ -20,8 +20,7 @@
   {
     type: 'button'
     tooltip: 'Git Control'
-    dependency: 'git-control'
-    callback: 'git-control:toggle'
+    callback: 'github:toggle-git-tab'
     icon: 'mark-github'
   },
   {

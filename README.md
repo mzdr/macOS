@@ -52,7 +52,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
         <sub>👆 <a href="https://atom.io/themes/one-dark-ui">One Dark UI</a> with <a href="https://atom.io/themes/chester-atom-syntax">Chester Atom</a> syntax and Fira Code.</sub>
     </p>
 
-    - Better Git support ([Blame], [Git Control], [Git Projects], [Git Plus])
+    - Better Git support ([Blame], [Git Projects], [Git Plus])
     - Code consistency ([DocBlockr], [EditorConfig], [Sort Lines], [Linter])
     - Faster coding ([Emmet], [HTML Head Snippets])
     - Easier reading of code ([Pretty JSON], [Highlight Selected], [Todo Show])
@@ -89,6 +89,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [HTTPS Everywhere]
     - [JSONView]
     - [EditThisCookie]
+    - [OneTab]
 
 #  
 
@@ -142,7 +143,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [Emmet]: https://atom.io/packages/emmet
 [File Icons]: https://atom.io/packages/file-icons
 [Flex Tool Bar]: https://atom.io/packages/flex-tool-bar
-[Git Control]: https://atom.io/packages/git-control
 [Git Plus]: https://atom.io/packages/git-plus
 [Git Projects]: https://atom.io/packages/git-projects
 [Highlight Selected]: https://atom.io/packages/highlight-selected
@@ -162,3 +162,4 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [HTTPS Everywhere]: https://www.eff.org/de/https-everywhere
 [JSONView]: http://jsonview.com/
 [EditThisCookie]: http://www.editthiscookie.com/
+[OneTab]: https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall
