@@ -78,6 +78,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [1Clipboard]
     - [Shiori]
     - [VLC]
+    - [Gas Mask] ([How to Use Gas Mask to Edit Mac Hosts File](http://geekussion.com/mac-os-x/gas-mask-mac-80/))
 
     <sub>See [`.stack/desktop`](.stack/desktop) for the full list of desktop app that will be installed. Adjust it to your personal taste.</sub>
 
@@ -121,6 +122,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [Shiori]: https://aki-null.net/shiori/
 [VLC]: https://www.videolan.org/vlc/
 [Atom]: https://atom.io
+[Gas Mask]: https://github.com/2ndalpha/gasmask
 
 <!-- Web development -->
 [nginx]: https://nginx.org/
