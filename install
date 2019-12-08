@@ -432,7 +432,7 @@ done
 
 step "Fonts\n"
 
-run brew tap caskroom/fonts
+run brew tap homebrew/cask-fonts
 
 for font in $(<$cwd/.stack/fonts); do
     if ! brew cask list -1 | grep -q "^${font}\$"; then
