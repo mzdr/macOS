@@ -440,19 +440,6 @@ for font in $(<$cwd/.stack/fonts); do
     fi
 done
 
-# step "(Web) Development setup"
-# run brew tap homebrew/php
-# run brew install nginx mysql php71 composer
-# run sudo cp -vR $cwd/etc/nginx /etc
-
-step "Atom packages/themes\n"
-
-for package in $(<$cwd/.stack/atom); do
-    if [ ! -d ~/.atom/packages/$package ]; then
-        run apm install $package
-    fi
-done
-
 step "Prezto\n"
 
 if [ ! -d ~/.zprezto ]; then
@@ -475,14 +462,6 @@ step "Dotfiles\n"
 run ln -sfv $cwd/.zshrc ~
 run ln -sfv $cwd/.zpreztorc ~
 run ln -sfv $cwd/.gitconfig ~
-
-step "Atom preferences\n"
-run mkdir -pv ~/.atom
-run ln -sfv $cwd/.atom/config.cson ~/.atom
-run ln -sfv $cwd/.atom/keymap.cson ~/.atom
-run ln -sfv $cwd/.atom/snippets.cson ~/.atom
-run ln -sfv $cwd/.atom/toolbar.cson ~/.atom
-run ln -sfv $cwd/.atom/styles.less ~/.atom
 
 step "iTerm2 preferences\n"
 run ln -sfv $cwd/.iTerm2 ~
