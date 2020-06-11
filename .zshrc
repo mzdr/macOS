@@ -12,10 +12,6 @@ fi
 
 # Customize to your needs...
 
-# Start rbenv
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
-
 # Add homebrew to the completion path
 #fpath=("/usr/local/bin/" $fpath)
 
@@ -51,9 +47,6 @@ setopt RM_STAR_WAIT
 setopt ZLE
 
 setopt NO_HUP
-
-# only fools wouldn't do this ;-)
-export EDITOR="atom"
 
 #setopt IGNORE_EOF
 
@@ -97,3 +90,7 @@ bindkey -M viins ' ' magic-space
 
 # z is the new j, yo
 . `brew --prefix`/etc/profile.d/z.sh
+
+# Node manager should install to user’s home…
+export N_PREFIX="$HOME/.n"
+export PATH="$N_PREFIX/bin:$PATH"
