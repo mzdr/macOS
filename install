@@ -436,7 +436,7 @@ run brew tap homebrew/cask-fonts
 
 for font in $(<$cwd/.stack/fonts); do
     if ! brew cask list -1 | grep -q "^${font}\$"; then
-        run brew cask install $font
+        run brew cask install $font --fontdir=/Library/Fonts
     fi
 done
 
