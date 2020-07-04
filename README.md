@@ -1,4 +1,4 @@
-![Desktop Screenshot](https://mzdr.github.io/macos/screenshot.jpg)  
+![Desktop Screenshot](./assets/desktop.png)  
 
 # Installation
 
