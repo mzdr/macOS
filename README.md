@@ -42,6 +42,8 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [CamingoCode]
     - [Anonymous Pro]
     - [Inconsolata]
+    - [Inter]
+    - [Jetbrains Mono]
 
     <sub>See [`brew/cask/fonts`](brew/casks/fonts) for the full list of fonts that will be installed. Adjust it to your personal taste.</sub>
 
@@ -100,3 +102,4 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [Anonymous Pro]: http://www.marksimonson.com/fonts/view/anonymous-pro
 [Inconsolata]: http://levien.com/type/myfonts/inconsolata.html
 [Jetbrains Mono]: https://jetbrains.com/mono
+[Inter]: https://rsms.me/inter/
