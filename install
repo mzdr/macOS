@@ -334,6 +334,17 @@ case $(read choice; echo $choice) in
         ;;
 esac
 
+step "Don’t show recent applications in Dock? [Y/n]: " ""
+case $(read choice; echo $choice) in
+    [nN] )
+        echo ""
+        ;;
+    [yY] | * )
+        echo ""
+        run defaults write com.apple.dock show-recents -bool false
+        ;;
+esac
+
 chapter "Adjusting Mac App Store settings"
 
 step "Enable the automatic update check? [Y/n]: " ""
