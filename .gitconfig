@@ -138,4 +138,9 @@
 [include]
   path = .gitconfig.user
 [credential]
-    helper = cache --timeout=3600
+  helper = cache --timeout=3600
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
