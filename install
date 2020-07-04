@@ -135,18 +135,6 @@ case $(read choice; echo $choice) in
         ;;
 esac
 
-step "Use scroll gesture with the Ctrl (^) modifier key to zoom? [Y/n]: " ""
-case $(read choice; echo $choice) in
-    [nN] )
-        echo ""
-        ;;
-    [yY] | * )
-        echo ""
-        run defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-        run defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-        ;;
-esac
-
 step "Disable press-and-hold for keys in favor of key repeat? [Y/n]: " ""
 case $(read choice; echo $choice) in
     [nN] )
@@ -415,7 +403,7 @@ fi
 
 step "CLI apps\n"
 
-for app in $(<$cwd/.stack/cli); do
+for app in $(<$cwd/brew/cli); do
     if ! brew list -1 | grep -q "^${app}\$"; then
         run brew install $app
     fi
@@ -423,7 +411,7 @@ done
 
 step "Desktop apps\n"
 
-for app in $(<$cwd/.stack/desktop); do
+for app in $(<$cwd/brew/casks/desktop); do
     if ! brew cask list -1 | grep -q "^${app}\$"; then
         run brew cask install $app
     fi
@@ -434,7 +422,7 @@ step "Fonts\n"
 
 run brew tap homebrew/cask-fonts
 
-for font in $(<$cwd/.stack/fonts); do
+for font in $(<$cwd/brew/casks/fonts); do
     if ! brew cask list -1 | grep -q "^${font}\$"; then
         run brew cask install $font --fontdir=/Library/Fonts
     fi
@@ -445,7 +433,7 @@ step "Prezto\n"
 if [ ! -d ~/.zprezto ]; then
     run git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
 else
-    run '(cd ~/.zprezto && git pull && git submodule update --init --recursive)'
+    run zprezto-update
 fi
 
 for rcfile in `find ~/.zprezto/runcoms ! -name "*.md" -type f`
@@ -470,6 +458,9 @@ run defaults write com.googlecode.iterm2 PrefsCustomFolder ~/.iTerm2
 
 step "VLC preferences\n"
 run ln -sfv $cwd/org.videolan.vlc ~/Library/Preferences
+
+step "Apache configuration\n"
+run ln -sfv $cwd/usr/local/etc/httpd/httpd.conf /usr/local/etc/httpd
 
 step "Set default wallpaper\n"
 run sqlite3 "~/Library/Application\ Support/Dock/desktoppicture.db" "\"\

@@ -19,8 +19,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     Which is [iTerm2] with
 
     - [Z-Shell] \(zsh)
-    - [CamingoCode] \(13pt) as font
-    - Anonymice [Powerline] \(14pt) as non-ASCII font
+    - [Jetbrains Mono]  as font
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
 
@@ -44,7 +43,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Anonymous Pro]
     - [Inconsolata]
 
-    <sub>See [`.stack/fonts`](.stack/fonts) for the full list of fonts that will be installed. Adjust it to your personal taste.</sub>
+    <sub>See [`brew/cask/fonts`](brew/casks/fonts) for the full list of fonts that will be installed. Adjust it to your personal taste.</sub>
 
 #  
 
@@ -61,7 +60,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [1Password]
     - [TablePlus]
 
-    <sub>See [`.stack/desktop`](.stack/desktop) for the full list of desktop app that will be installed. Adjust it to your personal taste.</sub>
+    <sub>See [`brew/cask/desktop`](brew/casks/desktop) for the full list of desktop app that will be installed. Adjust it to your personal taste.</sub>
 
 #    
 
@@ -76,7 +75,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [Prezto]: https://github.com/sorin-ionescu/prezto
 [garrett prompt]: https://github.com/chauncey-garrett/zsh-prompt-garrett
 [Seti]: https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes
-[Powerline]: https://github.com/powerline/fonts
 
 <!-- Desktop apps -->
 [Google Chrome]: https://www.google.de/chrome/
@@ -101,3 +99,4 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [CamingoCode]: http://www.janfromm.de/typefaces/camingomono/camingocode/
 [Anonymous Pro]: http://www.marksimonson.com/fonts/view/anonymous-pro
 [Inconsolata]: http://levien.com/type/myfonts/inconsolata.html
+[Jetbrains Mono]: https://jetbrains.com/mono
