@@ -407,7 +407,7 @@ chapter "Installing…"
 step "Homebrew\n"
 which -s brew
 if [[ $? != 0 ]] ; then
-    run '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+    run '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'
 else
     run brew update
 fi
@@ -470,8 +470,17 @@ run defaults write com.googlecode.iterm2 PrefsCustomFolder ~/.iTerm2
 step "VLC preferences\n"
 run ln -sfv $cwd/org.videolan.vlc ~/Library/Preferences
 
-step "Apache configuration\n"
+step "DAMP setup\n"
 run ln -sfv $cwd/usr/local/etc/httpd/httpd.conf /usr/local/etc/httpd
+run ln -sfv $cwd/usr/local/etc/dnsmasq.conf /usr/local/etc
+run ln -sfv $cwd/etc/resolver/test /etc/resolver
+run sudo apachectl stop
+run sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
+run sudo brew services start dnsmasq
+run sudo brew services start httpd
+run brew services start php
+run brew services start mysql
+run sudo /usr/local/bin/mysql_secure_installation
 
 step "Set default wallpaper\n"
 run sqlite3 "~/Library/Application\ Support/Dock/desktoppicture.db" "\"\
