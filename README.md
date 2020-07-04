@@ -19,7 +19,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     Which is [iTerm2] with
 
     - [Z-Shell] \(zsh)
-    - [Jetbrains Mono]  as font
+    - [JetBrains Mono]  as font
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
 
@@ -43,7 +43,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Anonymous Pro]
     - [Inconsolata]
     - [Inter]
-    - [Jetbrains Mono]
+    - [JetBrains Mono]
 
     <sub>See [`brew/cask/fonts`](brew/casks/fonts) for the full list of fonts that will be installed. Adjust it to your personal taste.</sub>
 
@@ -101,5 +101,5 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [CamingoCode]: http://www.janfromm.de/typefaces/camingomono/camingocode/
 [Anonymous Pro]: http://www.marksimonson.com/fonts/view/anonymous-pro
 [Inconsolata]: http://levien.com/type/myfonts/inconsolata.html
-[Jetbrains Mono]: https://jetbrains.com/mono
+[JetBrains Mono]: https://jetbrains.com/mono
 [Inter]: https://rsms.me/inter/
