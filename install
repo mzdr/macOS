@@ -404,15 +404,15 @@ esac
 
 chapter "Installing…"
 
-step "Homebrew\n"
 which -s brew
 if [[ $? != 0 ]] ; then
+    step "Homebrew\n"
     run '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'
 else
     run brew update
 fi
 
-step "CLI apps\n"
+step "CLI packages\n"
 
 for app in $(<$cwd/brew/cli); do
     if ! brew list -1 | grep -q "^${app}\$"; then
@@ -444,7 +444,7 @@ step "Prezto\n"
 if [ ! -d ~/.zprezto ]; then
     run git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.zprezto
 else
-    run zprezto-update
+    run '(cd ~/.zprezto && git pull --rebase && git submodule update --init --recursive)'
 fi
 
 for rcfile in `find ~/.zprezto/runcoms ! -name "*.md" -type f`
@@ -454,6 +454,16 @@ done
 
 run chsh -s /bin/zsh
 run '(cd ~/.zprezto/modules/prompt/functions && curl -s -O https://raw.githubusercontent.com/chauncey-garrett/zsh-prompt-garrett/master/prompt_garrett_setup)'
+
+step "PECL extensions\n"
+
+run 'mkdir -p $(pecl config-get ext_dir)'
+
+for extension in $(<$cwd/pecl); do
+    if ! pecl list | grep -q "^${extension}"; then
+        run pecl install $extension
+    fi
+done
 
 chapter "Restoring…"
 
@@ -470,10 +480,10 @@ run defaults write com.googlecode.iterm2 PrefsCustomFolder ~/.iTerm2
 step "VLC preferences\n"
 run ln -sfv $cwd/org.videolan.vlc ~/Library/Preferences
 
-step "DAMP setup\n"
+step "Dnsmasq, Apache, MySQL and PHP setup\n"
 run ln -sfv $cwd/usr/local/etc/httpd/httpd.conf /usr/local/etc/httpd
 run ln -sfv $cwd/usr/local/etc/dnsmasq.conf /usr/local/etc
-run ln -sfv $cwd/etc/resolver/test /etc/resolver
+run sudo ln -sfv $cwd/etc/resolver/test /etc/resolver
 run sudo apachectl stop
 run sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
 run sudo brew services start dnsmasq

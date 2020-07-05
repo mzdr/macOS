@@ -29,7 +29,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
     - [Apache]
     - [MySQL]
-    - [PHP7]
+    - [PHP7] with [Xdebug] and [APCu]
     - [dnsmasq]
     
     <sub>Dnsmasq will resolve all `*.test` requests to `localhost` and apache will look in `~/Sites/.alias/{directory}` for the actual files. Use symlinks for full power.</sub>
@@ -94,6 +94,8 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [MySQL]: https://www.mysql.com/
 [PHP7]: https://secure.php.net/
 [dnsmasq]: http://www.thekelleys.org.uk/dnsmasq/doc.html
+[Xdebug]: https://xdebug.org/
+[APCu]: https://www.php.net/manual/en/book.apcu.php
 
 <!-- Fonts -->
 [FiraCode]: https://github.com/tonsky/FiraCode
