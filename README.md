@@ -54,7 +54,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Google Chrome]
     - [Firefox]
     - [Slack]
-    - [Harvest]
     - [Dropbox]
     - [VLC]
     - [Rectangle]
