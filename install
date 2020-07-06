@@ -488,7 +488,6 @@ run sudo apachectl stop
 run sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
 run sudo brew services start dnsmasq
 run sudo brew services start httpd
-run brew services start php
 run brew services start mysql
 run sudo /usr/local/bin/mysql_secure_installation
 
