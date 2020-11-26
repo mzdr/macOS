@@ -53,7 +53,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
     - [Google Chrome]
     - [Firefox]
-    - [Slack]
     - [Dropbox]
     - [VLC]
     - [Rectangle]
@@ -80,7 +79,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 <!-- Desktop apps -->
 [Google Chrome]: https://www.google.de/chrome/
 [Firefox]: https://www.mozilla.org/de/firefox/
-[Slack]: https://slack.com/
 [Harvest]: https://www.getharvest.com/
 [Dropbox]: https://www.dropbox.com/downloading
 [VLC]: https://www.videolan.org/vlc/
