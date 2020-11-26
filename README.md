@@ -31,7 +31,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [MySQL]
     - [PHP7] with [Xdebug] and [APCu]
     - [dnsmasq]
-    
+
     <sub>Dnsmasq will resolve all `*.test` requests to `localhost` and apache will look in `~/Sites/.alias/{directory}` for the actual files. Use symlinks for full power.</sub>
 
 #  
@@ -59,6 +59,8 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Alfred]
     - [1Password]
     - [TablePlus]
+    - [Telegram]
+    - [GitHub Desktop]
 
     <sub>See [`brew/cask/desktop`](brew/casks/desktop) for the full list of desktop app that will be installed. Adjust it to your personal taste.</sub>
 
@@ -86,6 +88,8 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [1Password]: https://1password.com/
 [TablePlus]: https://tableplus.com/
 [Alfred]: https://www.alfredapp.com/
+[Telegram]: https://macos.telegram.org/
+[Github Desktop]: https://desktop.github.com/
 
 <!-- Web development -->
 [apache]: https://httpd.apache.org/
