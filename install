@@ -483,7 +483,8 @@ run ln -sfv $cwd/org.videolan.vlc ~/Library/Preferences
 step "Dnsmasq, Apache, MySQL and PHP setup\n"
 run ln -sfv $cwd/usr/local/etc/httpd/httpd.conf /usr/local/etc/httpd
 run ln -sfv $cwd/usr/local/etc/dnsmasq.conf /usr/local/etc
-run sudo ln -sfv $cwd/etc/resolver/test /etc/resolver
+run sudo mkdir -v /etc/resolver
+run sudo ln -sfv $cwd/etc/resolver/test /etc/resolver/test
 run sudo apachectl stop
 run sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
 run sudo brew services start dnsmasq
