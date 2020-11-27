@@ -81,7 +81,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 <!-- Desktop apps -->
 [Google Chrome]: https://www.google.de/chrome/
 [Firefox]: https://www.mozilla.org/de/firefox/
-[Harvest]: https://www.getharvest.com/
 [Dropbox]: https://www.dropbox.com/downloading
 [VLC]: https://www.videolan.org/vlc/
 [Rectangle]: https://rectangleapp.com/
@@ -90,6 +89,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [Alfred]: https://www.alfredapp.com/
 [Telegram]: https://macos.telegram.org/
 [Github Desktop]: https://desktop.github.com/
+[Spotify]: https://www.spotify.com/
 
 <!-- Web development -->
 [apache]: https://httpd.apache.org/
