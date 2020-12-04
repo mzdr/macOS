@@ -487,6 +487,36 @@ run sudo mkdir -v /etc/resolver
 run sudo ln -sfv $cwd/etc/resolver/test /etc/resolver/test
 run sudo apachectl stop
 run sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
+run mkdir /usr/local/etc/httpd/ssl
+run openssl req \
+-x509 \
+-nodes \
+-new \
+-newkey rsa:2048 \
+-keyout /usr/local/etc/httpd/ssl/server.key \
+-out /usr/local/etc/httpd/ssl/server.crt \
+-sha256 \
+-days 3650 \
+-config <(cat <<EOF
+
+[ req ]
+prompt = no
+distinguished_name = subject
+x509_extensions    = x509_ext
+
+[ subject ]
+commonName = *.$(whoami).test
+
+[ x509_ext ]
+subjectAltName = @alternate_names
+
+[ alternate_names ]
+DNS.1 = *.$(whoami).test
+DNS.2 = $(whoami).test
+
+EOF
+)
+
 run sudo brew services start dnsmasq
 run sudo brew services start httpd
 run brew services start mysql
