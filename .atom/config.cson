@@ -1,0 +1,10 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    projectHome: "~/Sites"
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "Jetbrains Mono"
+  welcome:
+    showOnStartup: false

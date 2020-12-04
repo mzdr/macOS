@@ -1,0 +1,2 @@
+'atom-text-editor':
+  'cmd-backspace': 'editor:delete-line'
