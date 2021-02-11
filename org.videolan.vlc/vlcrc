@@ -3645,7 +3645,7 @@ text-renderer=any
 #sub-track=-1
 
 # Audio language (string)
-#audio-language=
+audio-language=English
 
 # Subtitle language (string)
 #sub-language=
