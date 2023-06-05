@@ -424,7 +424,7 @@ step "Desktop apps\n"
 
 for app in $(<$cwd/brew/casks/desktop); do
     if ! brew cask list -1 | grep -q "^${app}\$"; then
-        run brew cask install $app
+        run brew install --cask $app
     fi
 done
 
@@ -435,7 +435,7 @@ run brew tap homebrew/cask-fonts
 
 for font in $(<$cwd/brew/casks/fonts); do
     if ! brew cask list -1 | grep -q "^${font}\$"; then
-        run brew cask install $font --fontdir=/Library/Fonts
+        run brew install --cask $font --fontdir=/Library/Fonts
     fi
 done
 
