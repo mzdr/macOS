@@ -407,7 +407,7 @@ chapter "Installing…"
 which -s brew
 if [[ $? != 0 ]] ; then
     step "Homebrew\n"
-    run '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'
+    run '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
 else
     run brew update
 fi
@@ -423,7 +423,7 @@ done
 step "Desktop apps\n"
 
 for app in $(<$cwd/brew/casks/desktop); do
-    if ! brew cask list -1 | grep -q "^${app}\$"; then
+    if ! brew list -1 --cask | grep -q "^${app}\$"; then
         run brew install --cask $app
     fi
 done
@@ -434,7 +434,7 @@ step "Fonts\n"
 run brew tap homebrew/cask-fonts
 
 for font in $(<$cwd/brew/casks/fonts); do
-    if ! brew cask list -1 | grep -q "^${font}\$"; then
+    if ! brew list -1 --cask | grep -q "^${font}\$"; then
         run brew install --cask $font --fontdir=/Library/Fonts
     fi
 done
@@ -455,16 +455,6 @@ done
 run chsh -s /bin/zsh
 run '(cd ~/.zprezto/modules/prompt/functions && curl -s -O https://raw.githubusercontent.com/chauncey-garrett/zsh-prompt-garrett/master/prompt_garrett_setup)'
 
-step "PECL extensions\n"
-
-run 'mkdir -p $(pecl config-get ext_dir)'
-
-for extension in $(<$cwd/pecl); do
-    if ! pecl list | grep -q "^${extension}"; then
-        run pecl install $extension
-    fi
-done
-
 chapter "Restoring…"
 
 step "Dotfiles\n"
@@ -479,59 +469,3 @@ run defaults write com.googlecode.iterm2 PrefsCustomFolder ~/.iTerm2
 
 step "VLC preferences\n"
 run ln -sfv $cwd/org.videolan.vlc ~/Library/Preferences
-
-step "Dnsmasq, Apache, MySQL and PHP setup\n"
-run ln -sfv $cwd/usr/local/etc/httpd/httpd.conf /usr/local/etc/httpd
-run ln -sfv $cwd/usr/local/etc/dnsmasq.conf /usr/local/etc
-run sudo mkdir -v /etc/resolver
-run sudo ln -sfv $cwd/etc/resolver/test /etc/resolver/test
-run sudo apachectl stop
-run sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
-run mkdir /usr/local/etc/httpd/ssl
-run openssl req \
--x509 \
--nodes \
--new \
--newkey rsa:2048 \
--keyout /usr/local/etc/httpd/ssl/server.key \
--out /usr/local/etc/httpd/ssl/server.crt \
--sha256 \
--days 3650 \
--config <(cat <<EOF
-
-[ req ]
-prompt = no
-distinguished_name = subject
-x509_extensions    = x509_ext
-
-[ subject ]
-commonName = *.$(whoami).test
-
-[ x509_ext ]
-subjectAltName = @alternate_names
-
-[ alternate_names ]
-DNS.1 = *.$(whoami).test
-DNS.2 = $(whoami).test
-
-EOF
-)
-
-run sudo brew services start dnsmasq
-run sudo brew services start httpd
-run brew services start mysql
-run sudo /usr/local/bin/mysql_secure_installation
-
-step "Set default wallpaper\n"
-run sqlite3 "~/Library/Application\ Support/Dock/desktoppicture.db" "\"\
-DELETE FROM data; \
-DELETE FROM displays; \
-DELETE FROM pictures; \
-DELETE FROM preferences; \
-DELETE FROM prefs; \
-DELETE FROM spaces; \
-INSERT INTO pictures (space_id, display_id) VALUES (null, null); \
-INSERT INTO data (value) VALUES ('${cwd}/wallpaper.jpg'); \
-INSERT INTO preferences (key, data_id, picture_id) VALUES (1, 1, 1); \
-\""
-run killall Dock

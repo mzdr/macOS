@@ -1,4 +1,4 @@
-![Desktop Screenshot](./assets/desktop.png)  
+This is my personal macOS setup script. Feel free to fork it and make it your own.
 
 # Installation
 
@@ -10,7 +10,7 @@ Just follow the prompts and you’ll be fine. 👌
 git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 ```
 
-# What will I get?
+# Result
 
 1. A super 🔥 **Terminal**…
 
@@ -22,17 +22,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [JetBrains Mono]  as font
     - [Prezto] with [garrett prompt]
     - [Seti] color scheme
-
-#  
-
-2. A ridiculously fast 🚓 💨 **web development** setup that maps any `{directory}.{user}.test` request automatically.
-
-    - [Apache]
-    - [MySQL]
-    - [PHP7] with [Xdebug] and [APCu]
-    - [dnsmasq]
-
-    <sub>Dnsmasq will resolve all `*.test` requests to `localhost` and apache will look in `~/Sites/.alias/{directory}` for the actual files. Use symlinks for full power.</sub>
 
 #  
 
@@ -49,7 +38,7 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
 #  
 
-4. A set of (my) relevant 🍧 **desktop apps**…
+3. A set of (my) relevant 🍧 **desktop apps**…
 
     - [Google Chrome]
     - [Firefox]
@@ -58,18 +47,11 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
     - [Rectangle]
     - [Alfred]
     - [1Password]
-    - [TablePlus]
     - [Telegram]
     - [GitHub Desktop]
 
     <sub>See [`brew/cask/desktop`](brew/casks/desktop) for the full list of desktop app that will be installed. Adjust it to your personal taste.</sub>
 
-#    
-
-<p align="center">
-    <a href="https://sebastianprein.com/">sebastianprein.com</a> ・
-    <a href="https://twitter.com/_mzdr">@_mzdr</a>
-</p>
 
 <!-- Terminal -->
 [Z-Shell]: http://www.zsh.org/
@@ -85,19 +67,11 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [VLC]: https://www.videolan.org/vlc/
 [Rectangle]: https://rectangleapp.com/
 [1Password]: https://1password.com/
-[TablePlus]: https://tableplus.com/
 [Alfred]: https://www.alfredapp.com/
 [Telegram]: https://macos.telegram.org/
 [Github Desktop]: https://desktop.github.com/
 [Spotify]: https://www.spotify.com/
 
-<!-- Web development -->
-[apache]: https://httpd.apache.org/
-[MySQL]: https://www.mysql.com/
-[PHP7]: https://secure.php.net/
-[dnsmasq]: http://www.thekelleys.org.uk/dnsmasq/doc.html
-[Xdebug]: https://xdebug.org/
-[APCu]: https://www.php.net/manual/en/book.apcu.php
 
 <!-- Fonts -->
 [FiraCode]: https://github.com/tonsky/FiraCode
