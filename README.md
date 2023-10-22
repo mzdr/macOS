@@ -40,7 +40,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 
 3. A set of (my) relevant 🍧 **desktop apps**…
 
-    - [Google Chrome]
     - [Firefox]
     - [Dropbox]
     - [VLC]
@@ -61,7 +60,6 @@ git clone https://github.com/mzdr/macOS.git ~/.macOS && ~/.macOS/install
 [Seti]: https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes
 
 <!-- Desktop apps -->
-[Google Chrome]: https://www.google.de/chrome/
 [Firefox]: https://www.mozilla.org/de/firefox/
 [Dropbox]: https://www.dropbox.com/downloading
 [VLC]: https://www.videolan.org/vlc/
