@@ -7,10 +7,10 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'utility' \
+  'git' \
   'completion' \
   'homebrew' \
-  'osx' \
-  'git' \
+  'docker' \
   'syntax-highlighting' \
   'history-substring-search' \
   'autosuggestions' \
